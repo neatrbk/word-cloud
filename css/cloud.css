@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.text-input {
+    width: 90%;
+    height: 60px;
+    display: block;
+    margin: 30px auto;
+    font-size: 50px;
+    border: 5px solid #E37C44;
+}
+
+.size-input {
+    width: 350px;
+    height: 60px;
+    display: block;
+    font-size: 50px;
+    border: 5px solid #e37c44;
+    margin: 20px 10px 20px 5%;
+    float: left;
+}
+
+.text-submit {
+    cursor: pointer;
+    display: inline-block;
+    width: 150px;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    line-height: 60px;
+    border: 3px solid #e37c44;
+    border-radius: 20px;
+    background-color: #C93D3D; 
+    margin-top: 20px;
+}
+
+.text-submit:hover {
+    background: #eee;
+    color: #da4e4e; 
+}
+
+.cloud-word {
+    border: 2px solid #eee;   
+    display: block;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+
