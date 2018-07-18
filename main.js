@@ -1,10 +1,14 @@
 //document.getElementById('text-input').value = "test test test test fun tun tun a the this";
 
 (function() {
+     //test data
+     document.getElementById("text-input").value = "test test test test test go go go apple apple apple apple";
+     document.getElementById("size-input").value = 3; 
 
     let state = {
         text: null,
-        size: null
+        size: null,
+        wordCount: {}
     };  
 
     let goButton = document.getElementById("text-submit");
@@ -12,16 +16,18 @@
     let sizeInput = document.getElementById("size-input");
 
     let startApp = () => {
-            let text = textInput.value;
-            let wordcount = {};
+     
+            state.text = textInput.value;
+            state.size = sizeInput.value;
 
-            if(!text) {
+            if(!state.text) {
                 alert("you need to put some text in!");
                 throw("no text was entered");
             }
 
-            wordcount = getWordCount(text); 
-            buildCloud(wordcount, '#cloudContainer');
+            state.wordcount = getWordCount(state.text); 
+            console.log(state);
+            buildCloud(state.wordcount, '#cloudContainer', state.size);
         }
 
     goButton.addEventListener("click", startApp);
@@ -32,7 +38,20 @@
         }
     });
 
-    sizeInput.addEventListener('keydown', )
+    sizeInput.addEventListener('keydown', (e) => {
+        let re = /^\d+$/
+
+        if(!re.test(e.char) ) {
+           //flagError("We can only accept numbers homie"); 
+        }
+
+        if(e.key = "Enter") {
+            startApp();
+        }
+        else {
+            state.size = this.value;
+        }
+    });
 
 
 })();

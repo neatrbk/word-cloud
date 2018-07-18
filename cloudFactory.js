@@ -27,7 +27,10 @@ const getWordCount = (txt) => {
 			"wasn't", "we'd", "we'll", "we're", "weren't", "what'd", "what's", "when'd",
 			"when'll", "when's", "where'd", "where'll", "where's", "who'd", "who'll",
 			"who's", "why'd", "why'll", "why's", "won't", "would've", "wouldn't", "you'd",
-            "you'll", "you're", "you've"];
+            "you'll", "you're", "you've", "very", "such", "ye", "one", "two", "three", 
+            "out", "up", "down", "more", "less", "now", "before", "myself", "oh", "hey",
+            "come", "here", "im", "i'm", "go", "dont", "don't", "youre", "well", "see", "okay",
+            "yeah", "cant", "going", "right", "ive", "i've", "i'll"];
 
 		return ( commonWords.indexOf(w) !== -1 )
 	}; 

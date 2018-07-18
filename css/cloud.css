@@ -50,7 +50,12 @@
     display: block;
     text-align: center;
     overflow: hidden;
+    font-size: ;
 }
 
+.cloudContainer {
+    clear: all;
+    margin: 40px 5%;
+}
 
 
